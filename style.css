@@ -1,0 +1,77 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+/* 背景設定在html不是body */
+  background:url(header.jpg) center center fixed ;
+  background-size: cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+}
+body{
+  /*
+  background:url(header.jpg)  black ;
+  background-size:auto;
+  background-position: 50%;
+  position: fixed;*/
+
+}
+.buffer{
+  height:10rem;
+}
+h1{
+/* 也可以用class='text-center取代' */
+  text-align:center ;
+  /*justify-content: center;
+  align-items: center;*/
+  color: #e2dbdb;
+  font-size:3rem;
+}
+/*.divider{
+  border:1px solid #F05F44;
+  width:60px;
+  height:0px;
+  position:relative;
+  top:450px;
+  left:920px;
+}*/
+
+/*使用Bootstrap5以上版本,<hr>標籤有預設透明度0.25+margin:1rem 0*/
+hr{
+  color:#F05F44;
+  max-width: 65px;
+  border: 3px solid #F05F44;
+  opacity:1 ;
+  margin:20px auto;
+}
+/* 根據CSS設定內容選擇合適selector */
+.btn{
+  text-transform: uppercase;
+  border-radius: 300px;
+  font-weight:700;
+}
+.btn-primary{
+  background:#F05F44 ;
+  border-color:#F05F44 ;
+/* bootstrap5.2以上版本需增加下述屬性 */
+  --bs-btn-hover-bg:#ee4b08;
+  --bs-btn-hover-border-color:#ee4b08;
+}
+.btn-primary:hover{
+  background:#ee4b08;
+  border-color:#F05F44 ;
+  border-width:4px;
+}
+.btn-xl{
+  padding:1rem 2rem;
+}
+
+/*button{
+  color: white;
+  background:#F05F44;
+  position:relative;
+  top:460px;
+  left:870px
+}*/
